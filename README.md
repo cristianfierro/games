@@ -1,6 +1,6 @@
 # hearst games
 
-Hearst Community Games and Interactive Content Builder
+Hearst Community Games and Interactive Content Builder App
 
 ## Requirements
 
