@@ -1,0 +1,26 @@
+{
+	"targets": {
+		"dev": {
+			"id": "dev",
+			"status": "saved",
+			"label": "Development only",
+			"preview": "/dist/games.iframe.html?game="
+		},
+		"stage": {
+			"id": "stage",
+			"status": "staged",
+			"label": "Dev Staging",
+			"preview": "http://rtheriault-test.s3-website-us-east-1.amazonaws.com/dist/games.iframe.html?game=",
+			"player": "http://d3fl7p4b77iddn.cloudfront.net/dist/games.iframe.html?game="
+		}
+	},
+	"editorId": "games",
+	"AWS": {
+		"S3BucketStage": "rtheriault-test",
+		"DynamoTable": "Puzzles-dev",
+		"profiles": {
+			"DynamoDB": "games-dev",
+			"S3": "games-dev"
+		}
+	}
+}

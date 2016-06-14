@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="<%= domain %>/scripts/jquery-1.12.3.min.js"></script>
+    <script src="<%= domain %>/scripts/iframeResizer.contentWindow.min.js"></script>
+    <script src="<%= domain %>/scripts/aws-sdk-2.3.1.min.js" type="text/javascript"></script>
+	<script src="<%= domain %>/scripts/aws-sdk-mobile-analytics.min.js" type="text/javascript"></script>
+    <script src="<%= domain %>/scripts/Analytics.js" type="text/javascript"></script>
+    <% _.forEach(css, function(cssfile) {%>
+    <link href="<%= domain %><%= cssfile %>" rel="stylesheet" type="text/css">
+    <%}) %>
+</head>
+<body>
+    <section id="hearst-game-container" data-game-id="demo">
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        <div id="container">
+
+        </div>
+    </section>
+    <% _.forEach(scripts, function(jsfile) {%>
+    <script src="<%= domain %><%= jsfile %>" type="text/javascript"></script>
+    <%}) %>
+    <script src="<%= domain %>/common.js" type="text/javascript"></script>
+    <script src="<%= domain %>/app.js" type="text/javascript"></script>
+</body>
+</html>

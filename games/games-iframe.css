@@ -1,0 +1,359 @@
+#gametest #list {
+	background-color: #ffffff;
+	width: 100%;
+	width: 0;
+	position: relative;
+	display: block;
+	margin-top: 0px;
+	height:200px;
+	padding:0px 0px;
+	overflow:hidden;
+	left:0%;
+	clear:both;
+}
+
+#gametest .tile {
+	display: block;
+	position: absolute;
+	background-color: yellowgreen;
+	color: #3A3A4D;
+	padding: 5px;
+	font-weight: bold;
+	background: #0a1f32 url('') no-repeat scroll center center;
+	background-size:cover;
+	border:2px solid #ffffff;
+	border-radius:4px;
+}
+
+#gametest.tempwrapper { position:relative; margin:0px 0px 30px 0px; }
+
+#gametest .bigbutton {
+	background-color: #EC008C;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	padding: 7px 40px 7px;
+	border-radius: 3px;
+	white-space:nowrap;
+}
+#gametest .bigbutton:hover { cursor:pointer; background-color: #f33aa8; }
+
+/* jjcss */
+
+#gametest #gamemodal { position:absolute; z-index:9999; width:100%; height:100%; text-align:center; }
+#gametest #gamemodalbg { background-color:white; position:absolute; z-index:9999; width:100%; height:100%; opacity:.85; top:0px; }
+#gametest .gamemodalcontent { position:relative; z-index:10000; margin-top:24%; }
+#gametest .quizheader,#gametest  .quizdek { display:block; text-align:center; }
+#gametest .quizheader { font-size: 70px; margin:0px 0px 0px 0px; }
+#gametest .quizdek { margin:10px 0px 13px 0px; }
+#gametest #blocker {
+	position:absolute;
+	z-index:8000;
+	width:100%;
+	height:100%;
+	text-align:center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#gametest #world {
+	width:100%;
+	height:100%;
+	position:relative;
+	z-index:10000;
+	display:block;
+}
+
+#gametest .secondary {
+	margin:35px 0px 0px 0px;
+}
+#gametest .adv {
+	float:right
+}
+#gametest .leftcol {
+	width:62%;
+}
+#gametest #answers {
+	padding-top:20px;
+	margin:0px 5px;
+}
+
+#gametest .answerhed,#gametest  .answerdek {
+	display:block;
+	text-align:center;
+}
+#gametest .answerhed {
+	font-size:100px;
+}
+#gametest .answerdek {
+	margin:0px 0px 17px 0px;
+}
+#gametest #answers .answer { float:left; width:100%; margin:0px 0px 20px 0px; }
+#gametest #answers .answer-image-holder { float:left; width:200px; height:200px; overflow:hidden; }
+#gametest #answers .answer-image { max-width:100%; }
+
+#gametest #answers .answer-hed,
+#gametest #answers .answer-dek { margin-left:220px; display:block; }
+
+#gametest #answers .answer-hed { font-size:47px; margin-top:10px; }
+#gametest #answers .answer-dek { font-family: Georgia, Times, Serif;     font-size: 19px;
+    line-height: 23px;}
+
+#gametest.cosmofont {
+	font-family: "NewsGothicCond", Helvetica, Arial, Sans-serif;
+	font-size: 1.6875rem;
+	line-height: 1;
+	color: #333;
+	letter-spacing: -0.02em;
+	text-rendering: optimizeLegibility;
+}
+
+#gametest #finaltime { background-color: yellow; padding: 1px 3px; font-size: 32px; border-radius: 3px; line-height: 31px; display: inline-block; }
+
+.dd-score-holder { float:right; font-size:21px;margin:6px 0px 0px 0px;}
+
+.dd-caption { width: 100%; text-align: center; position: absolute; bottom: 0px; background-color: white; left: 0px; font-size: 22px; padding: 6px 0px 0px; opacity:.9; }
+
+#stopwatch { font-size: 29px; width: 160px; display: block; position: relative; left: 50%; margin-left: -80px; color:#ec008c; }
+
+.gamenav { padding:0px 0px; margin:0px 0px 10px 0px; text-align:center; float:left; width:100%; }
+.dd-banner-success { background-color: #ec008d; padding: 10px 0px 8px;margin: 0px 0px 8px; border: 1px solid #ec008d; border-radius: 4px; color:#ffffff; line-height: 30px; font-size: 30px; }
+.dd-banner-summary { float:left; width:100%; }
+.dd-stopwatch-holder { float:left; width:30%; text-align:left; }
+.dd-social-holder { float:right; width:70%; text-align:right; }
+.dd-text { display:block; }
+.dd-social-holder .share-container {  }
+.dd-playstate { float:left; width:100%; }
+.dd-winstate { float:left; width:100%; }
+
+.article-body--text #gametest ul.dd-share-module--buttons {
+	margin: 0; 
+	padding: 0;
+}
+
+
+#guess {
+	float: right;
+	background-color: #ee3e80;
+	color: white;
+	padding: 10px 29px 5px;
+	text-decoration: none;
+	line-height: 23px;
+	border-radius: 3px; }
+#gametest.modalactive .tile { -webkit-filter:blur(3px); box-shadow:none !important;}
+#gametest.modalactive .gamenav { opacity:0; }
+#gametest .hideme { display:none; }
+#gametest .tile { font-size:0; } /*hides the label number */
+
+.testing { background-color:red; }
+
+#gametest .recirc-wrapper {
+	margin: 8px 0px 0px 0px;
+	display: none;
+	position: relative;
+	z-index: 11000;
+}
+#gametest .recirc-standard-primary { border-top:none !important; }
+/* restore the "hidden" inline recirc for our recirc */
+.hide-inline-recirc .winner #gametest .module-story-list {
+	display:inline-block !important;
+	width:100%;
+	margin:0px;
+	padding:0px 3px;
+}
+
+#gametest .trc_rbox_header {
+	line-height: 1;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	background: transparent;
+	height: auto;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	font-style: normal;
+	border-bottom: 1px dotted #e2e2e6;
+	margin-bottom: 15px;
+	text-align:center;
+}
+#gametest .trc_rbox_header_span {
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	text-rendering: optimizelegibility;
+	background-color: #EC008C;
+	font-family: "NewsGothicCond", Helvetica, Arial, Sans-serif;
+	color: #FFF;
+	font-size: 28px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 0.08em;
+	text-transform: uppercase; padding: 15px 30px;
+	padding: 15px 30px;
+}
+#gametest .trc_rbox_header:after {
+	border-top: 8px solid #EC008C;
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	margin-left: -8px;
+	z-index: 1;
+	width: 0;
+	height: 0;
+	border-left: 8px solid rgba(0, 0, 0, 0);
+	border-right: 8px solid rgba(0, 0, 0, 0);
+}
+
+.dd-share-module--button-wrap { display: inline-block; background-color: blue; margin: 0px 4px; }
+.dd-share-button--link {
+	font-size: 19px;
+	color: white !important;
+	display: block;
+	padding: 6px 0px;
+	text-align: center;
+	min-width:47px;
+	text-decoration: none;
+}
+.dd-share-button--icon {
+	font-family: "IconFont";
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; }
+.dd-share-button--text { display:none; }
+.dd-icon-facebook:before {
+	content: "\e014";
+}
+.dd-icon-twitter:before {
+	content: "\e033";
+}
+.dd-icon-whatsapp:before {
+	content: "\e045";
+}
+.dd-share-module--button-wrap-facebook { background-color: #3b5998; }
+.dd-share-module--button-wrap-twitter { background-color: #00aced; }
+.dd-share-module--button-wrap-whatsapp { background-color: #5cbe4a; }
+
+
+.winner #gametest .dd-banner-success {
+	animation-duration: 1s;
+	animation-name: flip;
+	transform: rotateX(720deg);
+	-webkit-animation-delay: .25s;
+	animation-delay: .25s;
+	transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+	-moz-transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+	-webkit-transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+
+@keyframes flip {
+  from {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+  }
+
+  to {
+	-webkit-transform: rotateX(720deg);
+	-moz-transform: rotateX(720deg);
+	transform: rotateX(720deg);
+  }
+}
+
+
+.article-body--text #gametest .share-module--buttons { width:100% !important; }
+#gametest .share-module { width:100%; }
+#gametest .answers-header { font-size:30px; font-size: 50px; text-align: center; margin: 30px 0px; border-bottom: 1px solid #cbcbcb; }
+/*
+.show-left-rail .article-body--share-container .share-module { width:100%; }
+
+.page-container { max-width: 1208px; margin: 0px auto; }
+.gallery-header--block { height:auto !important; }
+.main-content { width:100%; float:left; }
+.ad { width: 305px; float: right; margin-right: -100%; }
+.col1 { float: right; width: 100%; }
+.col1-inner { margin-right: 320px; }
+.subhead { font-family: Georgia, Times, Serif;
+	font-size: 20px;
+	line-height: 21.5px !important;
+	color: #aaa;
+	font-style: italic;
+	line-height: 1.6; clear:left; }
+
+*/
+
+/* Mobile first */
+.dd-caption { font-size: 15px; padding: 3px 0px 3px; }
+#gametest .trc_rbox_header_span { font-size:22px; }
+.dd-share-module--buttons {
+	margin-top:0;
+	margin-bottom:0;
+}
+#gametest .gamenav { padding:0px 7px; }
+#gametest li.dd-share-module--button-wrap.dd-share-module--button-wrap-whatsapp { margin-right:0px; }
+#gametest .module-story-list--stories {
+	padding-bottom: 30px;
+}
+
+/* Article page overrides (no RAMS control for these ) */
+#share-sticky,
+.standard-article-social-byline,
+.article-body--share-container {
+	display:none;
+}
+
+/* changes for desktop */
+@media (min-width: 640px) {
+	.dd-caption { font-size: 20px; }
+	.dd-score-holder { /* font-size:27px; */ }
+ 	.dd-share-module--button-wrap-whatsapp { display: none; } /* Hide this for mobile */
+ 	li.dd-share-module--button-wrap.dd-share-module--button-wrap-twitter { margin-right:0px; }
+	#gametest #share-sticky { display:block; }
+	.dd-share-module--button-wrap {  }
+	.dd-share-button--link { min-width:125px; }
+	.dd-share-button--link {  }
+
+	#gametest .module-story-list--stories { text-align:center; }
+	#gametest .module-story-list .module-story { float:none; display:inline-block; vertical-align:top; }
+	#gametest .module-story-list .module-story:nth-child(n+3) { display: inline-block; }
+	#gametest .module-story { width:50%; }
+
+}
+
+@media (min-width: 980px) {
+
+	#gametest .quizheader { font-size:90px; }
+	.dd-share-button--link { font-size:29px; }
+	#gametest #finaltime { font-size: 35px; padding: 8px 3px 6px; }
+	#gametest .quizdek { font-size:32px; }
+	#gametest .gamenav { padding:0px 5px; }
+
+	#gametest .recirc-standard-primary { width:100%; }
+	.standard-article-body--content,
+	.featured-article #gametest .recirc-standard-primary,
+	.suppress-left-rail #gametest .recirc-standard-primary {
+		width:100%;
+		margin-left:0px;
+	}
+	#gametest .module-story-list .module-story:nth-child(n+4) { display: block; }
+	#gametest .trc_rbox_header_span { font-size:28px; }
+	.article-body--text #gametest ul.dd-share-module--buttons { width:auto; }
+}
+
+@media (min-width:1024px) {
+	#gametest .recirc-standard-primary .module-story { width:50%; }
+}
+
+@media (min-width:1190px) {
+	.dd-caption { font-size: 22px; }
+}

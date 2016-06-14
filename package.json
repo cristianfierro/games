@@ -1,0 +1,87 @@
+{
+  "name": "games-testing",
+  "version": "1.0.0",
+  "description": "puzzle game for cosmopolitan",
+  "main": "app.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "watch-css": "nodemon -e scss --watch source/sass -x \"npm run build-css\"",
+    "build-css": "node-sass --recursive --include-path source/sass source/sass --output source/css",
+    "preserver": "rsync -r source/images/ images",
+    "server": "webpack-dev-server --hot --inline --config webpack.config.js & npm run watch-css & wait",
+    "start": "npm run server",
+    "prepackage": "rimraf dist && mkdir dist && touch dist/.gitkeep && npm run build-css && rsync -r source/fonts/ dist/fonts && rsync -r source/css/ dist/css && rsync -r source/images/ dist/images && rsync -r source/scripts/ dist/scripts",
+    "package": "node build/package.js",
+    "windows:copy:fonts": "(robocopy /e source/fonts dist/fonts) ^& IF %ERRORLEVEL% LEQ 1 exit 0",
+    "windows:copy:css": "(robocopy /e source/css dist/css) ^& IF %ERRORLEVEL% LEQ 1 exit 0",
+    "windows:copy:scripts": "(robocopy /e source/scripts dist/scripts) ^& IF %ERRORLEVEL% LEQ 1 exit 0",
+    "windows:copy:images": "(robocopy /e source/images dist/images) ^& IF %ERRORLEVEL% LEQ 1 exit 0",
+    "prewindows:package": "rimraf dist && mkdir dist && type NUL > dist/.gitkeep && npm run build-css && npm run windows:copy:css && npm run windows:copy:scripts && npm run windows:copy:images && npm run windows:copy:fonts",
+    "windows:package": "node build/package.js",
+    "prewindows:server": "(robocopy /e source/images images) ^& IF %ERRORLEVEL% LEQ 1 exit 0",
+    "windows:server": "webpack-dev-server --hot --inline --config webpack.config.js",
+    "windows:seed:images": "(robocopy /e seed/images images) ^& IF %ERRORLEVEL% LEQ 1 exit 0",
+    "windows:seed": "(robocopy /e seed/data data) ^& IF %ERRORLEVEL% LEQ 1 exit 0",
+	"package:test": "rsync -r seed/images/ dist/images && rsync -r seed/data/ dist/data"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "jasmine-jquery": "^2.1.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-mocha-reporter": "^2.0.3",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-webpack": "^1.7.0",
+    "node-notifier": "^4.5.0",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2",
+    "phantomjs-prebuilt": "^2.1.7",
+    "postcss-loader": "^0.8.2",
+    "resolve-url-loader": "^1.4.3",
+    "rimraf": "^2.5.2",
+    "sass-loader": "^3.2.0",
+    "shelljs": "^0.6.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-stream": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hearst-Digital/games-testing.git"
+  },
+  "keywords": [
+    "puzzle",
+    "javascript",
+    "game",
+    "cosmopolitan"
+  ],
+  "author": "Dom & Tom, Hearst",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hearst-Digital/games-testing/issues"
+  },
+  "homepage": "https://github.com/Hearst-Digital/games-testing#readme",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  },
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=3.0.0"
+  }
+}

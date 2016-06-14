@@ -1,0 +1,388 @@
+@font-face {
+    font-family: "Avenir Next LT W02SC Demi";
+    src: url("../fonts/093cecaf-bae9-4928-87d7-de460ba3bfa7.eot?#iefix");
+    src: url("../fonts/093cecaf-bae9-4928-87d7-de460ba3bfa7.eot?#iefix") format("eot"),url("../fonts/373db362-010f-4a93-8677-0e79c739f520.woff2") format("woff2"),url("../fonts/eea58f26-3cc8-41c5-8dd3-cb71287f9bef.woff") format("woff"),url("../fonts/ba2cc6b9-5b84-43bd-a52f-12493b937908.ttf") format("truetype"),url("../fonts/adc8a73e-7eef-4ffa-9ab8-73b0a1824b56.svg#adc8a73e-7eef-4ffa-9ab8-73b0a1824b56") format("svg");
+}
+@font-face {
+    font-family: "Avenir Next LT W02SC Bold";
+    src: url("../fonts/5d935365-5dbd-425b-b201-ea84ccc5ebf9.eot?#iefix");
+    src: url("../fonts/5d935365-5dbd-425b-b201-ea84ccc5ebf9.eot?#iefix") format("eot"),url("../fonts/6c660095-c4cb-48c0-9631-aac39152dbaa.woff2") format("woff2"),url("../fonts/45f41043-63ce-4e17-9511-c4434e651c2c.woff") format("woff"),url("../fonts/18a556fd-1cf2-4af8-afa3-b0e0346bcfc9.ttf") format("truetype"),url("../fonts/4ca8a95d-bd83-4c38-b9d7-c2156aa82c21.svg#4ca8a95d-bd83-4c38-b9d7-c2156aa82c21") format("svg");
+}
+@font-face {
+    font-family: "Avenir Next W01 Light";
+    src: url("../fonts/0ecef829-586e-426d-a633-4c8a8c926769.eot?#iefix");
+    src: url("../fonts/0ecef829-586e-426d-a633-4c8a8c926769.eot?#iefix") format("eot"),url("../fonts/49c5f3e1-5867-4b1d-a843-2d07fa60d85d.woff2") format("woff2"),url("../fonts/f401df6f-54eb-406c-b46a-90b9451c598d.woff") format("woff"),url("../fonts/276fe25e-e430-4376-b33c-705dd77b3dba.ttf") format("truetype"),url("../fonts/869dc33b-3685-4d74-a51c-82b435579093.svg#869dc33b-3685-4d74-a51c-82b435579093") format("svg");
+}
+/*
+@font-face {
+    font-family: 'IconFont';
+    src: url('../fonts/IconFont.eot');
+    src: url('../fonts/IconFont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/IconFont.woff') format('woff'),
+         url('../fonts/IconFont.ttf') format('truetype'),
+         url('../fonts/IconFont.svg#IconFont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+@font-face {
+    font-family: 'IconFont';
+    src: url('../fonts/IconFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Microclearfix - Nicolas Gallagher */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body {
+    font-family: "Avenir Next W01 Light";
+    color: #FFFFFF;
+}
+#header {
+    background-color: #FFF;
+    color: #000;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 13px 0;
+    font-family: "NewsGothicCond", Helvetica, Arial, Sans-serif;
+    .score {
+        position: absolute;
+        font-size: 16px;
+        top: 15px;
+        right: 10px;
+    }
+}
+.hidden {
+    visibility: hidden;
+}
+.inactive {
+    display: none;
+}
+.puzzle {
+    margin: 0 auto;
+    position: relative;
+}
+.ui-blocker {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, .85);
+    #start {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: calc(50% - 146px);
+    }
+}
+.bigbutton {
+    background-color: rgba(51, 51, 51, 1);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 7px 40px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+    cursor: pointer;
+    &:hover {
+        background-color: #AAA;
+    }
+}
+.board {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+.intro {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    font-size: 20px;
+    color: #FFF;
+    padding-top: 0;
+    h1 {
+        font-size: 34px;
+        margin: 20px 27px 0;
+    }
+    p {
+        margin: 0 60px;
+        padding-top: 30px;
+        line-height: 24px;
+    }
+}
+.score-recap {
+  text-align: center;
+  padding-top: 40px;
+  color: #4a4a4a;
+  .header {
+      display: block;
+      font-size: 24px;
+      margin-top: 40px;
+  }
+
+  .large {
+      display: block;
+      font-size: 53px;
+      margin: 10px 0px 0px;
+  }
+}
+
+.answer {
+    box-shadow: 0 4px #A8A8A8;
+    background-color: #CFCFCF;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 0 10px 10px 0;
+    border-radius: 3px;
+    display: inline-block;
+    color: black;
+}
+.answer-cosmo {
+    background-color: #DA322A;
+    box-shadow: 0 4px #99231D;
+    color: white;
+    padding: 20px 80px;
+    margin: 40px 0 20px;
+}
+
+.item {
+    cursor: move;
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 1px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .dd-caption {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: #FFF;
+        text-align: center;
+        padding: 3px;
+        opacity: .8;
+        span {
+            color: #000;
+            font-weight: bold;
+            font-family: "NewsGothicCond", Helvetica, Arial, Sans-serif;
+        }
+    }
+}
+
+.dd-winstate {
+    background-color: #FFF;
+    color:#000;
+    .dd-banner-success {
+        background-color: #ec008d;
+        padding: 10px 0px 8px;
+        margin: 0px 0px 8px;
+        border: 1px solid #ec008d;
+        border-radius: 4px;
+        color:#FFF;
+        line-height: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .dd-time {
+        float: left;
+        font-weight: bold;
+        .dd-time-amount {
+            padding: 3px 0;
+            font-size: 30px;
+            font-weight: bolder;
+            background-color: yellow;
+        }
+
+    }
+    .dd-social {
+        float: right;
+        font-weight: bold;
+        text-align: right;
+        .dd-social-links {
+            padding: 3px 0;
+        }
+    }
+}
+.dd-winstate--message {
+    margin-bottom: 7px;
+}
+a.link-button {
+    cursor: pointer;
+    font-size: 19px;
+    color: white;
+    display: inline-block;
+    padding: 6px 0px;
+    text-align: center;
+    min-width:125px;
+    text-decoration: none;
+    &.facebook {
+        background-color: #3B5998;
+    }
+    &.twitter {
+        background-color: #00ACED;
+    }
+    &.try-again {
+        background-color: #4A4A4A;
+    }
+}
+
+.dd-share-button--icon {
+	font-family: "IconFont";
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.dd-icon-facebook:before {
+	content: "\e014";
+}
+.dd-icon-twitter:before {
+	content: "\e033";
+}
+
+
+
+.feedbacktext {
+    position: absolute;
+    font-family: "Avenir Next LT W02SC Bold";
+    text-transform: uppercase;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    display: flex;
+    display: -moz-box;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    .correct-holder {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        border: 20px solid #B8E986;
+        padding: 30px 0;
+        color: #B8E986;
+        -ms-transform: rotate(-3deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-3deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-3deg);
+        opacity: 1;
+        .correct, .points {
+            text-shadow: 2px 2px 6px rgba(0,0,0,.5);
+        }
+    }
+    .incorrect-holder {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        border: 20px solid #BF0202;
+        padding: 30px 0;
+        -ms-transform: rotate(-3deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-3deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-3deg);
+        opacity: 1;
+        .incorrect, .points {
+            text-shadow: 1px 1px 3px rgba(255,255,255,1);
+        }
+    }
+    .correct, .incorrect {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .points {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-shadow: 2px 2px 6px rgba(0,0,0,.5);
+    }
+}
+
+/* HOST OVERRIDES */
+body.default .dd-winstate .dd-banner-success {
+    background-color: #333;
+    border: 1px solid #333;
+}
+body.default .bigbutton {
+    background-color: #333;
+    &:hover {
+        background-color: lighten(#333, 20%);
+    }
+}
+body.cosmopolitan .dd-winstate .dd-banner-success {
+    background-color: #ec008d;
+    border: 1px solid #ec008d;
+}
+body.cosmopolitan .bigbutton {
+    background-color: #ec008d;
+    &:hover {
+        background-color: lighten(#ec008d, 20%);
+    }
+}
+body.squire .dd-winstate .dd-banner-success {
+    background-color: #333;
+    border: 1px solid #333;
+}
+body.squire .bigbutton {
+    background-color: #333;
+    &:hover {
+        background-color: lighten(#333, 20%);
+    }
+}
+body.elle .dd-winstate .dd-banner-success {
+    background-color: #333;
+    border: 1px solid #333;
+}
+body.elle .bigbutton {
+    background-color: #333;
+    &:hover {
+        background-color: lighten(#333, 20%);
+    }
+}
+body.hdmtech .dd-winstate .dd-banner-success {
+    background-color: #e2e2e2;
+    border: 1px solid #e2e2e2;
+}
+body.hdmtech .bigbutton {
+    background-color: #e2e2e2;
+    &:hover {
+        background-color: lighten(#e2e2e2, 5%);
+    }
+}

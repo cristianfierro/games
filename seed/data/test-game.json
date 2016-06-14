@@ -1,0 +1,167 @@
+{
+    "id": "test-game",
+    "config_version": "1.0.0",
+    "gametype": "pixels",
+    "slides": {
+        "image1": {
+            "width": 485,
+            "height": 359,
+            "crop": {
+                "width": 449,
+                "height": 359,
+                "left": 18,
+                "top": 0
+            },
+            "url": "\/images\/test-game\/diddy.jpg",
+            "answers": [
+                {
+                    "caption": "face 1",
+                    "correct": false
+                },
+                {
+                    "caption": "face 4",
+                    "correct": true
+                }
+            ]
+        },
+        "image2": {
+            "width": 485,
+            "height": 359,
+            "crop": {
+                "width": 449,
+                "height": 359,
+                "left": 18,
+                "top": 0
+            },
+            "url": "\/images\/test-game\/diddy.jpg",
+            "answers": [
+                {
+                    "caption": "face 4",
+                    "correct": false
+                },
+                {
+                    "caption": "face 3",
+                    "correct": true
+                },
+                {
+                    "caption": "face 2",
+                    "correct": false
+                }
+            ]
+        },
+        "image3": {
+            "width": 368,
+            "height": 293,
+            "crop": {
+                "width": 366,
+                "height": 293,
+                "left": 1,
+                "top": 0
+            },
+            "url": "\/images\/test-game\/b3.jpg",
+            "answers": [
+                {
+                    "caption": "face 1",
+                    "correct": false
+                },
+                {
+                    "caption": "face 4",
+                    "correct": true
+                }
+            ]
+        },
+        "image4": {
+            "width": 368,
+            "height": 293,
+            "crop": {
+                "width": 366,
+                "height": 293,
+                "left": 1,
+                "top": 0
+            },
+            "url": "\/images\/test-game\/b4.jpg",
+            "answers": [
+                {
+                    "caption": "face 4",
+                    "correct": true
+                }
+            ]
+        },
+        "image5": {
+            "width": 368,
+            "height": 293,
+            "crop": {
+                "width": 366,
+                "height": 293,
+                "left": 1,
+                "top": 0
+            },
+            "url": "\/images\/test-game\/b5.jpg",
+            "answers": [
+                {
+                    "caption": "face 4",
+                    "correct": false
+                },
+                {
+                    "caption": "face 1",
+                    "correct": false
+                },
+                {
+                    "caption": "face 3",
+                    "correct": true
+                }
+            ]
+        },
+        "image6": {
+            "width": 368,
+            "height": 293,
+            "crop": {
+                "width": 366,
+                "height": 293,
+                "left": 1,
+                "top": 0
+            },
+            "url": "\/images\/test-game\/b6.jpg",
+            "answers": [
+                {
+                    "caption": "face 4",
+                    "correct": true
+                },
+                {
+                    "caption": "face 1",
+                    "correct": false
+                }
+            ]
+        },
+        "image7": {
+            "width": 368,
+            "height": 294,
+            "crop": {
+                "width": 368,
+                "height": 245,
+                "left": 0,
+                "top": 25
+            },
+            "url": "\/images\/test-game\/50shades-1.jpg",
+            "answers": [
+                {
+                    "caption": "face 1",
+                    "correct": false
+                },
+                {
+                    "caption": "face 4",
+                    "correct": false
+                },
+                {
+                    "caption": "face 3",
+                    "correct": true
+                }
+            ]
+        }
+    },
+    "settings": {
+        "complexity": "easy",
+        "randomizeOrder": "yes",
+        "slideduration": 20
+    }
+}

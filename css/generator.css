@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'AvenirNextLTPro-Demi';
+	src:url('../../fonts/AvenirNextLTPro-Demi.eot');
+	src:url('../../fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/AvenirNextLTPro-Demi.woff') format('woff'),
+		url('../../fonts/AvenirNextLTPro-Demi.ttf') format('truetype'),
+		url('../../fonts/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
+}
+
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=9d8653da-85f2-41cd-a060-5fc5f64c5528");
+@font-face{
+font-family:"Avenir Next LT W02SC Demi";
+src:url("../../fonts/093cecaf-bae9-4928-87d7-de460ba3bfa7.eot?#iefix");
+src:url("../../fonts/093cecaf-bae9-4928-87d7-de460ba3bfa7.eot?#iefix") format("eot"),url("../../fonts/373db362-010f-4a93-8677-0e79c739f520.woff2") format("woff2"),url("../../fonts/eea58f26-3cc8-41c5-8dd3-cb71287f9bef.woff") format("woff"),url("../../fonts/ba2cc6b9-5b84-43bd-a52f-12493b937908.ttf") format("truetype"),url("../../fonts/adc8a73e-7eef-4ffa-9ab8-73b0a1824b56.svg#adc8a73e-7eef-4ffa-9ab8-73b0a1824b56") format("svg");
+}
+@font-face{
+font-family:"Avenir Next LT W02SC Demi It";
+src:url("../../fonts/c549e15e-2d42-4d70-8f1f-8c2b8da07980.eot?#iefix");
+src:url("../../fonts/c549e15e-2d42-4d70-8f1f-8c2b8da07980.eot?#iefix") format("eot"),url("../../fonts/fc00f758-62db-4443-a0f6-3acbd46a0504.woff2") format("woff2"),url("../../fonts/a446d11c-3518-4efa-86d1-c6a11a5bdd2a.woff") format("woff"),url("../../fonts/6a65317f-d669-486c-8520-b1f29a1918da.ttf") format("truetype"),url("../../fonts/0eb281ce-3d2a-4f1c-a492-f825eeb27bf8.svg#0eb281ce-3d2a-4f1c-a492-f825eeb27bf8") format("svg");
+}
+@font-face{
+font-family:"Avenir Next LT W02SC Bold";
+src:url("../../fonts/5d935365-5dbd-425b-b201-ea84ccc5ebf9.eot?#iefix");
+src:url("../../fonts/5d935365-5dbd-425b-b201-ea84ccc5ebf9.eot?#iefix") format("eot"),url("../../fonts/6c660095-c4cb-48c0-9631-aac39152dbaa.woff2") format("woff2"),url("../../fonts/45f41043-63ce-4e17-9511-c4434e651c2c.woff") format("woff"),url("../../fonts/18a556fd-1cf2-4af8-afa3-b0e0346bcfc9.ttf") format("truetype"),url("../../fonts/4ca8a95d-bd83-4c38-b9d7-c2156aa82c21.svg#4ca8a95d-bd83-4c38-b9d7-c2156aa82c21") format("svg");
+}
+@font-face{
+font-family:"Avenir Next LT W04 Bold Italic";
+src:url("../../fonts/4d86bb3d-6b02-4f17-888f-7cb71771ff9b.eot?#iefix");
+src:url("../../fonts/4d86bb3d-6b02-4f17-888f-7cb71771ff9b.eot?#iefix") format("eot"),url("../../fonts/0511f8d4-c152-4b37-94a3-9723de223de8.woff2") format("woff2"),url("../../fonts/0ad05680-6397-4845-b42d-0a6564e3f923.woff") format("woff"),url("../../fonts/00a60fb6-157d-4cea-a057-90dc75a31998.ttf") format("truetype"),url("../../fonts/50f10cb4-9251-4d10-82a8-3f9da635e3c8.svg#50f10cb4-9251-4d10-82a8-3f9da635e3c8") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-UltraLi";
+src:url("../../fonts/17c55b27-e9ab-43cd-b948-d49f97480d68.eot?#iefix");
+src:url("../../fonts/17c55b27-e9ab-43cd-b948-d49f97480d68.eot?#iefix") format("eot"),url("../../fonts/2e3f5cb9-101f-46cf-a7b3-dfaa58261e03.woff2") format("woff2"),url("../../fonts/fa19948e-5e38-4909-b31e-41acd170d6f2.woff") format("woff"),url("../../fonts/6de0ce4d-9278-467b-b96f-c1f5f0a4c375.ttf") format("truetype"),url("../../fonts/9fd4ea0c-b19a-4b21-9fdf-37045707dd78.svg#9fd4ea0c-b19a-4b21-9fdf-37045707dd78") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-UltraLt_721260";
+src:url("../../fonts/8b498c39-fabe-4789-bb81-5e37c9ecddd3.eot?#iefix");
+src:url("../../fonts/8b498c39-fabe-4789-bb81-5e37c9ecddd3.eot?#iefix") format("eot"),url("../../fonts/1c6c1881-23c9-4d6a-a018-759d1c9ded15.woff2") format("woff2"),url("../../fonts/f0d655c5-a88a-49ad-bb29-f3b5cca41731.woff") format("woff"),url("../../fonts/3a561c83-40d4-4868-8255-e8455eb009c4.ttf") format("truetype"),url("../../fonts/3966f856-9dcf-48e7-88e7-7400f1b7d619.svg#3966f856-9dcf-48e7-88e7-7400f1b7d619") format("svg");
+}
+@font-face{
+font-family:"Avenir Next W01 Thin";
+src:url("../../fonts/42c793cf-df5a-4e07-bf3e-37de54df02b6.eot?#iefix");
+src:url("../../fonts/42c793cf-df5a-4e07-bf3e-37de54df02b6.eot?#iefix") format("eot"),url("../../fonts/64779e28-a3b8-4364-949c-771372a0a327.woff2") format("woff2"),url("../../fonts/c6c8e4be-17eb-4475-bbfc-bb485ffde766.woff") format("woff"),url("../../fonts/87a872d0-5af3-4231-a77c-37f41ec74662.ttf") format("truetype"),url("../../fonts/91464696-717b-4eaa-adbd-0dfc5e5fd782.svg#91464696-717b-4eaa-adbd-0dfc5e5fd782") format("svg");
+}
+@font-face{
+font-family:"AvenirNextW01-ThinItali";
+src:url("../../fonts/41537dd7-434f-4f85-b9d9-a88b160bc18d.eot?#iefix");
+src:url("../../fonts/41537dd7-434f-4f85-b9d9-a88b160bc18d.eot?#iefix") format("eot"),url("../../fonts/ec2dd1bd-4391-4b89-bf85-1a2346ea4342.woff2") format("woff2"),url("../../fonts/fcf6f211-efa2-40f6-9c6b-e0ca63b6ea60.woff") format("woff"),url("../../fonts/60fcc194-9529-4b99-9506-cdb26642656a.ttf") format("truetype"),url("../../fonts/c110f1ef-6fdf-4008-bc75-b370649384a3.svg#c110f1ef-6fdf-4008-bc75-b370649384a3") format("svg");
+}
+@font-face{
+font-family:"Avenir Next W01 Light";
+src:url("../../fonts/0ecef829-586e-426d-a633-4c8a8c926769.eot?#iefix");
+src:url("../../fonts/0ecef829-586e-426d-a633-4c8a8c926769.eot?#iefix") format("eot"),url("../../fonts/49c5f3e1-5867-4b1d-a843-2d07fa60d85d.woff2") format("woff2"),url("../../fonts/f401df6f-54eb-406c-b46a-90b9451c598d.woff") format("woff"),url("../../fonts/276fe25e-e430-4376-b33c-705dd77b3dba.ttf") format("truetype"),url("../../fonts/869dc33b-3685-4d74-a51c-82b435579093.svg#869dc33b-3685-4d74-a51c-82b435579093") format("svg");
+}
+@font-face{
+font-family:"AvenirNextW01-LightItal";
+src:url("../../fonts/440b64c9-a97b-4a0c-a6af-a6bb6d49c252.eot?#iefix");
+src:url("../../fonts/440b64c9-a97b-4a0c-a6af-a6bb6d49c252.eot?#iefix") format("eot"),url("../../fonts/62e28d52-436d-40b8-a5f0-00479f3f44ed.woff2") format("woff2"),url("../../fonts/5b8c6fdc-0ba4-4b65-87e4-d5ae51245ea5.woff") format("woff"),url("../../fonts/c677d79d-442e-4c76-8db1-c29ac7788039.ttf") format("truetype"),url("../../fonts/216291a0-f927-4f75-9de7-6e36c7fd7ebf.svg#216291a0-f927-4f75-9de7-6e36c7fd7ebf") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-Regular";
+src:url("../../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+src:url("../../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("../../fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"),url("../../fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("../../fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("../../fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-Italic";
+src:url("../../fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix");
+src:url("../../fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix") format("eot"),url("../../fonts/7377dbe6-f11a-4a05-b33c-bc8ce1f60f84.woff2") format("woff2"),url("../../fonts/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff") format("woff"),url("../../fonts/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf") format("truetype"),url("../../fonts/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-Medium";
+src:url("../../fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
+src:url("../../fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"),url("../../fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"),url("../../fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"),url("../../fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"),url("../../fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
+}
+@font-face{
+font-family:"AvenirNextLTW01-MediumI_721278";
+src:url("../../fonts/77a9cdce-ea6a-4f94-95df-e6a54555545e.eot?#iefix");
+src:url("../../fonts/77a9cdce-ea6a-4f94-95df-e6a54555545e.eot?#iefix") format("eot"),url("../../fonts/3f380a53-50ea-4a62-95c5-d5d8dba03ab8.woff2") format("woff2"),url("../../fonts/8344e877-560d-44d4-82eb-9822766676f9.woff") format("woff"),url("../../fonts/b28b01d9-78c5-46c6-a30d-9a62c8f407c5.ttf") format("truetype"),url("../../fonts/ed4d3c45-af64-4992-974b-c37cd12a9570.svg#ed4d3c45-af64-4992-974b-c37cd12a9570") format("svg");
+}
+
+
+body {
+  font-family: "Avenir Next W01 Light";
+  color:#242424;
+}
+
+
+.main { max-width: 650px; margin: 0px auto; position:relative; background-color:white;}
+
+
+.main { }
+#container {  position:relative; width:100%;  background:transparent url('../images/golf-bg.jpg') no-repeat scroll 0px 0px; background-size:100%; border-radius:4px;; min-height:310px; text-align:center; background-size:cover;}
+
+h1 { display:inline-block; width:80%; color:white; font-size:20px; text-align:center; margin:70px 0px 0px; position:relative;}
+h1::before {
+	content: " ";
+    width: 129px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    top: -18px;
+    }
+h1::after {
+	content: " ";
+    width: 129px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    bottom:-20px;
+    }
+
+.button-holder { position:absolute; bottom:20px; width:100%; text-align:center; }
+
+.answer { box-shadow: 0 4px #99231D; background-color:#DA322A; color:white;
+    text-decoration: none;
+    padding: 15px 15px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 3px; display:inline-block; }
+.answer.start { font-size:22px; margin-top:118px; }
+.answer:hover { background-color:#F7392F; }
+.answer:active { background-color:#DA322A; position:relative; bottom:-1px; }
+    
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	h1 { margin-top:100px; }
+}

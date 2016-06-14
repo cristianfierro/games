@@ -1,0 +1,15 @@
+{
+	"games": [
+		{
+			"game": "games",
+			"description": "General Games iFrame Page",
+			"domain": "/dist",
+			"css": [
+			],
+			"scripts": [
+				"/scripts/Draggable.js",
+				"/scripts/TweenLite.js"
+			]
+		}
+	]
+}

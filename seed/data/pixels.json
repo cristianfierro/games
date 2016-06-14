@@ -1,0 +1,155 @@
+{
+    "id": "got",
+    "config_version": "1.0.0",
+    "gametype": "pixels",
+    "slides": {
+        "image1": {
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "../images/got/Theon-Greyjoy.jpg",
+            "answers": [
+                {
+                    "caption": "Khal Drogo",
+                    "correct": false
+                },
+                {
+                    "caption": "Theon Greyjoy",
+                    "correct": true
+                }
+            ]
+        },
+        "image2": {
+            "width": 1200,
+            "height": 600,
+            "crop": {
+                "width": 900,
+                "height": 600,
+                "left": 150,
+                "top": 0
+            },
+            "url": "/images/got/the-hound.jpg",
+            "answers": [
+                {
+                    "caption": "The Hound Sandor Clegane",
+                    "correct": true
+                },
+                {
+                    "caption": "White Walker",
+                    "correct": false
+                }
+            ]
+        },
+        "image3": {
+            "width": 500,
+            "height": 230,
+            "crop": {
+                "width": 345,
+                "height": 230,
+                "left": 78,
+                "top": 0
+            },
+            "url": "/images/got/Oberyn-Martell.gif",
+            "answers": [
+                {
+                    "caption": "Oberyn Martell",
+                    "correct": true
+                },
+                {
+                    "caption": "Petyr Baelish",
+                    "correct": false
+                }
+            ]
+        },
+        "image4": {
+            "width": 1600,
+            "height": 800,
+            "crop": {
+                "width": 1200,
+                "height": 800,
+                "left": 200,
+                "top": 0
+            },
+            "url": "/images/got/White-Walker.jpg",
+            "answers": [
+                {
+                    "caption": "Theon Greyjoy"
+                },
+                {
+                    "caption": "White Walker",
+                    "correct": true
+                }
+            ]
+        },
+        "image5": {
+            "width": 1600,
+            "height": 800,
+            "crop": {
+                "width": 1200,
+                "height": 800,
+                "left": 200,
+                "top": 0
+            },
+            "url": "/images/got/Khal-Drogo-Daenerys-Targaryen.jpg",
+            "answers": [
+                {
+                    "caption": "Khal Drogo",
+                    "correct": true
+                },
+                {
+                    "caption": "Petyr Baelish"
+                }
+            ]
+        },
+        "image6": {
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "/images/got/Sansa-LittleFinger.jpg",
+            "answers": [
+                {
+                    "caption": "Oberyn Martell"
+                },
+                {
+                    "caption": "Petyr Baelish",
+                    "correct": true
+                }
+            ]
+        },
+        "image7": {
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "/images/got/The-Mountain-Gregor-Clegane.jpg.png",
+            "answers": [
+                {
+                    "caption": "The Hound Sandor Clegane"
+                },
+                {
+                    "caption": "The Mountain Gregor Clegane",
+                    "correct": true
+                }
+            ]
+        }
+    },
+    "settings": {
+        "randomizeOrder": "yes",
+        "slideduration": 20
+    },
+    "challenge": "Identify these GoT Characters"
+}

@@ -1,0 +1,85 @@
+{
+    "id": "GoT-Deaths",
+    "config_version": "1.0.0",
+    "gametype": "rearrange",
+    "slides": {
+        "image6": {
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 569,
+                "height": 454,
+                "left": 187,
+                "top": 36,
+                "url": "../images/GoT-Deaths/image6-crop.jpg"
+            },
+            "url": "../images/GoT-Deaths/eddard-ned-stark.jpg",
+            "caption": "Ned Stark"
+        },
+        "image4": {
+            "width": 614,
+            "height": 345,
+            "crop": {
+                "width": 431,
+                "height": 345,
+                "left": 92,
+                "top": 0,
+                "url": "../images/GoT-Deaths/image4-crop.jpg"
+            },
+            "url": "../images/GoT-Deaths/robb-stark.jpg",
+            "caption": "Robb Stark"
+        },
+        "image2": {
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 613,
+                "height": 490,
+                "left": 340,
+                "top": 0,
+                "url": "../images/GoT-Deaths/image2-crop.jpg"
+            },
+            "url": "../images/GoT-Deaths/King-Geoffrey.jpg",
+            "caption": "King Joffrey"
+        },
+        "image1": {
+            "width": 374,
+            "height": 597,
+            "crop": {
+                "width": 374,
+                "height": 299,
+                "left": -2,
+                "top": 21,
+                "url": "../images/GoT-Deaths/image1-crop.jpg"
+            },
+            "url": "../images/GoT-Deaths/Oberyn-Martell.jpg",
+            "caption": "Oberyn Martell"
+        },
+        "image5": {
+            "width": 374,
+            "height": 576,
+            "crop": {
+                "width": 374,
+                "height": 299,
+                "left": -1,
+                "top": 15,
+                "url": "../images/GoT-Deaths/image5-crop.jpg"
+            },
+            "url": "../images/GoT-Deaths/Tywin-Lannister.jpg",
+            "caption": "Tywin Lannister"
+        },
+        "image3": {
+            "width": 1600,
+            "height": 800,
+            "crop": {
+                "width": 1000,
+                "height": 800,
+                "left": 300,
+                "top": 0
+            },
+            "url": "../images/GoT-Deaths/John-Snow.jpg",
+            "caption": "Jon Snow"
+        }
+    },
+    "challenge": "Put these GoT Characters in Order of their Death"
+}

@@ -1,0 +1,142 @@
+{
+    "id": "buckets",
+    "config_version": "1.0.0",
+    "gametype": "buckets",
+    "challenge": "Can you tell which outfits Kanye designed himself?",
+    "slides": {
+        "image1": {
+            "answer": "a",
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "../images/kanye/kanye1.jpg"
+        },
+        "image2": {
+            "answer": "a",
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "../images/kanye/kanye2.jpg"
+        },
+        "image3": {
+            "answer": "b",
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "../images/kanye/kanye3.jpg"
+        },
+        "image4": {
+            "answer": "b",
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "../images/kanye/kanye4.jpg"
+        },
+        "image5": {
+            "answer": "b",
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "../images/kanye/kanye5.jpg"
+        },
+        "image6": {
+            "answer": "a",
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "../images/kanye/kanye6.jpg"
+        },
+        "image7": {
+            "answer": "a",
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "../images/kanye/kanye7.jpg"
+        },
+        "image8": {
+            "answer": "a",
+            "width": 980,
+            "height": 490,
+            "crop": {
+                "width": 735,
+                "height": 490,
+                "left": 123,
+                "top": 0
+            },
+            "url": "../images/kanye/kanye8.jpg"
+        }
+
+    },
+    "answers": {
+        "a": {
+            "image": {
+                "width": 1600,
+                "height": 1200,
+                "crop": {
+                    "width": 1600,
+                    "height": 1067,
+                    "left": 0,
+                    "top": 67
+                },
+                "url": "../images/kanye/kanye2.jpg"
+            },
+            "title": "Bucket A",
+            "description": "A bucket of shrimp"
+        },
+        "b": {
+            "image": {
+                "width": 1600,
+                "height": 1200,
+                "crop": {
+                    "width": 1600,
+                    "height": 1067,
+                    "left": 0,
+                    "top": 67
+                },
+                "url": "../images/kanye/kanye2.jpg"
+            },
+            "title": "Bucket A",
+            "description": "A bucket of shrimp"
+        }
+    },
+    "settings": {
+		"randomizeOrder": "yes",
+		"showSplashscreen": true,
+        "slideduration": 3
+    }
+}

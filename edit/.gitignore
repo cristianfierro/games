@@ -1,0 +1,4 @@
+# ignore composer vendor dir
+vendor/*
+# our configuration settings
+config.json

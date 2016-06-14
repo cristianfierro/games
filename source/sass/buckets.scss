@@ -1,0 +1,275 @@
+@import 'variables';
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.inactive {
+	visibility: hidden;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+
+@font-face {
+    font-family: "Avenir Next W01 Light";
+    src: url("/fonts/0ecef829-586e-426d-a633-4c8a8c926769.eot?#iefix");
+    src: url("/fonts/0ecef829-586e-426d-a633-4c8a8c926769.eot?#iefix") format("eot"),url("/fonts/49c5f3e1-5867-4b1d-a843-2d07fa60d85d.woff2") format("woff2"),url("/fonts/f401df6f-54eb-406c-b46a-90b9451c598d.woff") format("woff"),url("/fonts/276fe25e-e430-4376-b33c-705dd77b3dba.ttf") format("truetype"),url("/fonts/869dc33b-3685-4d74-a51c-82b435579093.svg#869dc33b-3685-4d74-a51c-82b435579093") format("svg");
+}
+body {
+    font-family: "Avenir Next W01 Light";
+}
+.board {
+    position: relative;
+    min-height: 600px;
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-color: #000;
+        color: #CCC;
+        .timer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 5px;
+        }
+        .status {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 5px;
+        }
+    }
+    .content {
+        background-color: $white;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        bottom: 60px;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+
+    }
+    .options {
+        float: left;
+        width: 100%;
+        clear: both;
+        padding: 20px 0;
+        text-align: center;
+        background-color: $almost-white;
+        .option {
+            cursor: pointer;
+            background-color: $cosmopolitan-bg;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin: 0 10px 10px 0;
+            border-radius: 3px;
+            display: inline-block;
+            color: $white;
+            z-index: 1;
+            &:hover {
+                background-color: lighten($cosmopolitan-bg, 10%);
+            }
+            &:active {
+                background-color: darken($cosmopolitan-bg, 10%);
+            }
+        }
+    }
+}
+.challenge {
+    text-align: center;
+    padding: 10px 10px 30px;
+}
+.button {
+	cursor: pointer;
+	background-color: $cosmopolitan-bg;
+	text-decoration: none;
+	padding: 15px 30px;
+	margin: 0 10px 10px 0;
+	border-radius: 3px;
+	display: inline-block;
+	color: $white;
+    &:hover {
+        background-color: lighten($cosmopolitan-bg, 10%);
+    }
+    &:active {
+        background-color: darken($cosmopolitan-bg, 10%);
+    }
+
+}
+
+.progress {
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    background-color: #CCC;
+    width: 100%;
+    z-index: 1;
+    clear: both;
+}
+.progress-fg {
+    height: 10px;
+    position: absolute;
+    background-color: $cosmopolitan-bg;
+    width: 100%;
+    transition: width 0.2s linear;
+}
+.pile {
+    width: 250px;
+    height: 320px;
+    margin: 50px auto;
+    position: relative;
+}
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 320px;
+    padding: 5px;
+    background-color: $white;
+    box-shadow: 2px 1px 8px rgba(0,0,0,0.4);
+    img {
+        width: 240px;
+        height: 310px;
+    }
+}
+
+
+
+.east, .west {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    .answer {
+        position: absolute;
+        top: calc(50% - 50px);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.east {
+    right: 0;
+    span {
+        background-color: #CCC;
+        border: 1px solid #BBB;
+        border-radius: 50%;
+        padding: 20px;
+        position: absolute;
+        left: 30px;
+    }
+}
+.west {
+    left: 0;
+    span {
+        background-color: #CCC;
+        border: 1px solid #BBB;
+        border-radius: 50%;
+        padding: 20px;
+        position: absolute;
+        left: 30px;
+    }
+}
+@media (max-width: 540px) {
+    .pile {
+        width: 180px;
+        height: 230px;
+    }
+    .challenge {
+        padding: 10px 10px 50px;
+    }
+    .card {
+        width: 180px;
+        height: 230px;
+        img {
+            width: 170px;
+            height: 220px;
+        }
+    }
+    .east, .west {
+        width: 50px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .west {
+        span {
+            padding: 10px;
+            position: absolute;
+            left: 10px;
+        }
+    }
+    .east {
+        span {
+            padding: 10px;
+            position: absolute;
+            left: 10px;
+        }
+    }
+}
+
+.intro h1 {
+    font-size: 34px;
+    margin: 20px 27px 0;
+}
+.intro {
+    text-align: center;
+    font-size: 20px;
+    color: #4a4a4a;
+    padding-top: 0;
+	background-color: $white;
+	.score-recap {
+	    display: none;
+	    text-align: center;
+	    padding-top: 30px;
+	    color: #4a4a4a;
+	}
+	.score-recap .header,
+	.score-recap .large {
+	    display: block;
+	}
+	.score-recap .header {
+	    font-size: 24px;
+	    margin-top: 40px;
+	}
+	.score-recap .large {
+	    font-size: 53px;
+	    margin: 10px 0 0;
+	}
+
+}
+.intro p {
+    margin: 0 60px;
+    padding-top: 30px;
+    line-height: 24px;
+}
+.feedback {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 30px;
+	background:transparent url('/images/ide/check.png') no-repeat scroll 0px 0px;
+	background-size:100%;
+	z-index:100;
+}
+
+.feedback.incorrect {
+	background-image:url('/images/ide/xred.png');
+}

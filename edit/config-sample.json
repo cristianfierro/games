@@ -1,0 +1,41 @@
+{
+	"targets": {
+		"dev": {
+			"id": "dev",
+			"status": "saved",
+			"label": "Edit Server only",
+			"preview": "/dist/games.iframe.html?game="
+		},
+		"stage": {
+			"id": "stage",
+			"status": "staged",
+			"label": "Staging",
+			"preview": "http://amv-games-stage-assets.s3.amazonaws.com/dist/games.iframe.html?game=",
+			"player": "http://games-stage.h-cdn.co/dist/games.iframe.html?game="
+		},
+		"prod": {
+			"id": "prod",
+			"also": "stage",
+			"status": "published",
+			"label": "Production",
+			"preview": "http://amv-games-prod-assets.s3.amazonaws.com/dist/games.iframe.html?game=",
+			"player": "http://games.h-cdn.co/dist/games.iframe.html?game="
+		}
+	},
+	"editorId": "games",
+	"AWS": {
+		"S3BucketStage": "amv-games-stage-assets",
+		"S3BucketProd": "amv-games-prod-assets",
+		"DynamoTable": "Games",
+		"profiles": {
+			"DynamoDB": "games-dev",
+			"S3": "games-prod"
+		}
+	},
+	"Fastly": {
+		"CdnProd": "http://games.h-cdn.co",
+		"CdnStage": "http://games-stage.h-cdn.co",
+		"HipsProd": "http://hips.h-cdn.co/games-prod",
+		"HipsStage": "http://stage-hips.h-cdn.co/games-stage"
+	}
+}
